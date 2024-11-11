@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>寻宝游戏</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="main-menu">
+        <h1>寻宝游戏</h1>
+        <img src="your_main_image_path.jpg" alt="Main Menu Image" id="main-menu-image">
+        <input type="text" id="nickname-input" placeholder="请输入昵称">
+        <button id="start-new-game-btn">开始新游戏</button>
+        <button id="load-game-btn">读取存档</button>
+    </div>
+
+    <div id="animation-container">
+        <img id="current-scene-img" src="" alt="当前场景图片">
+        <div id="message-container"></div>
+        <div id="virtual-keyboard"></div>
+    </div>
+
+    <audio id="background-music" loop>
+        <source src="background-music.mp3" type="audio/mp3">
+    </audio>
+
+    <div id="restart-buttons-container" style="display:none;">
+        <button id="restart-btn">再来一次</button>
+        <button id="main-menu-btn">返回主菜单</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
